@@ -6,7 +6,7 @@ De breedte van een <var>n</var> aantal kolommen plus een (<var>n</var> − 1) aa
 
 <code>.cols<var>n</var></code>
 
-Deel de inhoud op in een <var>n</var> aantal CSS kolommen. <code>.cols3</code> heeft bijvoorbeeld <code>columns: auto 3</code>.
+Deel de inhoud op in een <var>n</var> aantal CSS kolommen. <code>.cols3</code> heeft bijvoorbeeld <code>columns: auto 3</code>. De marges tússen de kolommen zijn 1,5 <code>rem</code>.
 
 <code>.c<var>t</var>o<var>n</var></code>
 
