@@ -1,0 +1,22 @@
+{
+  "name": "degrid",
+  "version": "1.0.0",
+  "description": "Het stramien van deidee.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deidee/degrid.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "ACJ",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/deidee/degrid/issues"
+  },
+  "homepage": "https://github.com/deidee/degrid#readme"
+}
