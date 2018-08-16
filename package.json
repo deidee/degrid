@@ -15,6 +15,7 @@
   ],
   "author": "ACJ",
   "license": "UNLICENSED",
+  "private": true,
   "bugs": {
     "url": "https://github.com/deidee/degrid/issues"
   },
