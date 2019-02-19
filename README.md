@@ -1,4 +1,4 @@
-# degrid
+# ![degrid](https://deidee.com/logo.png?str=deGrid)
 
 <code>.c<var>n</var></code>
 
