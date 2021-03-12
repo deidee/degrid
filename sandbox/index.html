@@ -1,0 +1,103 @@
+<!doctype html>
+<html dir="ltr" lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>deGrid</title>
+    <style>
+        :root {
+            --dp: 1px;
+            --px: 1px;
+        }
+
+        * {
+            border: 0;
+            box-sizing: border-box;
+            outline: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            background-image: repeating-linear-gradient(
+                    transparent,
+                    transparent calc(24px - var(--dp)),
+                    rgba(0, 255, 255, .5) calc(24px - var(--dp)), rgba(0, 255, 255, .5) 24px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr repeat(12, 5.25rem) 1fr;
+        }
+
+        .grid > * {
+            height: 72px;
+            padding: 8px;
+        }
+
+        .grid > *::after {
+            content: attr(class);
+            display: block;
+        }
+
+        .cell {
+            background: rgba(255, 255, 0, .25);
+            outline: 1px solid rgba(127, 127, 0, .5);
+        }
+
+        .sahasranama {
+            background: rgba(255, 0, 255, .25);
+            grid-column-start: 2;
+            grid-column-end: 14;
+            outline: 1px solid rgba(127, 0, 127, .5);
+        }
+    </style>
+</head>
+<body>
+<div class="grid">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="sahasranama"></div>
+</div>
+<script>
+    "use strict";
+
+    let devicePixelRatio = window.devicePixelRatio || 1;
+    html.style.setProperty("--dp", 1 / devicePixelRatio + 'px');
+
+</script>
+</body>
+</html>
