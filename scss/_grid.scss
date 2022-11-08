@@ -1,0 +1,12 @@
+
+%grid {
+  display: grid;
+  grid-template-areas:
+                    "header header header header header header header header header header header header header header header header"
+                    "left fill-left hero hero hero hero hero hero hero hero hero hero hero hero fill-right right"
+                    "left fill-left hero hero hero hero hero hero hero hero hero hero hero hero fill-right right"
+                    "left fill-left hero hero hero hero hero hero hero hero hero hero hero hero fill-right right";
+  grid-auto-rows: minmax(24px, auto);
+  grid-template-columns: minmax(10.5rem, 1fr) 1fr repeat(12, 5.25rem) 1fr  minmax(10.5rem, 1fr);
+  grid-template-rows: 4.5rem repeat(3, calc(100vh / 3 - 3rem)) 4.5rem;
+}
