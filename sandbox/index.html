@@ -26,7 +26,8 @@
 
         .grid {
             display: grid;
-            grid-template-columns: 1fr repeat(12, 5.25rem) 1fr;
+            grid-template-columns: minmax(10.5rem, 1fr) 1fr repeat(12, 5.25rem) 1fr  minmax(10.5rem, 1fr);
+            /*grid-template-rows: repeat(auto-fill, 1.5rem);*/
         }
 
         .grid > * {
@@ -46,8 +47,8 @@
 
         .sahasranama {
             background: rgba(255, 0, 255, .25);
-            grid-column-start: 2;
-            grid-column-end: 14;
+            grid-column-start: 3;
+            grid-column-end: -3;
             outline: 1px solid rgba(127, 0, 127, .5);
         }
     </style>
@@ -96,7 +97,7 @@
     "use strict";
 
     let devicePixelRatio = window.devicePixelRatio || 1;
-    html.style.setProperty("--dp", 1 / devicePixelRatio + 'px');
+    document.documentElement.style.setProperty("--dp", 1 / devicePixelRatio + 'px');
 
 </script>
 </body>
