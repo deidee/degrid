@@ -17,6 +17,11 @@
             padding: 0;
         }
 
+        header {
+            background: rgba(0, 0, 255, .25);
+            grid-area: header;
+        }
+
         html {
             /* Baseline grid, silly goat. */
             background-image: repeating-linear-gradient(
@@ -25,8 +30,19 @@
                     rgba(0, 255, 255, .5) calc(24px - var(--dp)), rgba(0, 255, 255, .5) 24px);
         }
 
+        nav {
+            background: rgba(255, 127, 0, .25);
+            grid-area: left;
+        }
+
         .grid {
             display: grid;
+            grid-template-areas:
+                    "header header header header header header header header header header header header header header header header"
+                    "left fill-left hero hero hero hero hero hero hero hero hero hero hero hero fill-right right"
+                    "left fill-left hero hero hero hero hero hero hero hero hero hero hero hero fill-right right"
+                    "left fill-left hero hero hero hero hero hero hero hero hero hero hero hero fill-right right";
+            grid-auto-rows: minmax(24px, auto);
             grid-template-columns: minmax(10.5rem, 1fr) 1fr repeat(12, 5.25rem) 1fr  minmax(10.5rem, 1fr);
             grid-template-rows: 4.5rem repeat(3, calc(100vh / 3 - 3rem)) 4.5rem;
         }
@@ -66,6 +82,8 @@
 </head>
 <body>
 <div class="grid">
+    <header>header</header>
+    <nav>nav</nav>
     <div class="cell"></div>
     <div class="cell"></div>
     <div class="cell"></div>
@@ -102,8 +120,8 @@
     <div class="cell"></div>
     <div class="cell"></div>
     <div class="cell"></div>
+    <footer class="full"></footer>
     <div class="sahasranama"></div>
-    <div class="full"></div>
 </div>
 <script>
     "use strict";
